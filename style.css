@@ -1,37 +1,73 @@
 body {
-    font-family: sans-serif;
-    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
 .container {
-    background: white;
-    padding: 20px;
+    background-color: #ffffff;
+    padding: 20px 30px;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 300px;
+}
+
+h1 {
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333;
 }
 
 input {
-    width: 80%;
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 button {
-    padding: 8px;
+    width: 100%;
+    padding: 10px;
     margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
 li {
-    margin: 10px 0;
-    text-align: left;
+    background: #f9f9f9;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer;
 }
 
 li.completed {
     text-decoration: line-through;
     color: gray;
+}
+
+.delete-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: red;
+    cursor: pointer;
+    font-weight: bold;
 }
